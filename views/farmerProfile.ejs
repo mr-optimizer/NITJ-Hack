@@ -1,0 +1,77 @@
+<%- include("partials/header")-%>
+<title>Profile</title>
+</head>
+<body>
+<div id="farmerProfile">
+    <h2><%= name %></h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-2">
+            Aadhar No.
+        </div>
+        <div class="col-md-3 details">
+            <%= adhar %>
+        </div>
+        <div class="col-md-2" style="margin-left: 8rem;">
+            Password
+        </div>
+        <div class="col-md-3 details">
+            <p><em>*************</em></p>
+        </div>
+       </div>
+    <div class="row" style="margin-top: 1rem;">
+        <div class="col-md-2">
+            Contact
+        </div>
+        <div class="col-md-3 details">
+           <%= phone1 %>
+        </div>
+        <div class="col-md-2"style="margin-left: 8rem;">
+            Address
+        </div>
+        <div class="col-md-3 details">
+            <%= address %>
+        </div>
+       </div>
+       <div class="row" style="margin-top: 1rem;">
+        <div class="col-md-2">
+            Land Area
+        </div>
+        <div class="col-md-3 details">
+            <%= area %> sqft.
+        </div>
+        <div class="col-md-2"style="margin-left: 8rem;">
+            Village
+        </div>
+        <div class="col-md-3 details">
+            <%= village %>
+        </div>
+       </div>
+       <hr>
+       <h3>Crops that you grow</h3>
+       <ul>
+<%    for(var i=0;i<crop.length; i++) { %>
+    <li><%= crop[i].name %></li>
+<% }  %>
+       </ul>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>

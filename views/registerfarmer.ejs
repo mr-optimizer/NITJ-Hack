@@ -1,0 +1,107 @@
+<%- include("partials/header")-%>
+<title>Register</title>
+</head>
+<body style="background-image: url('images/registerFarmer.jpg');">
+
+<!-- <img class="registerImg" src="images/registerFarmer.jpg" alt=""> -->
+
+<div class="registerFarmer">
+    <h1>Register</h1>
+    <form action="/registerfarmer" method="POST">
+        <div class="form-row">
+            <div class="col-md-6 form-group" style="padding-right: 1%;">
+                <input type="text" class="form-control" name="fname" placeholder="Full Name">
+            </div>
+            <div class="col-md-6 form-group" style="padding-left:1%;">
+                <input class="form-control" type="tel" id="phonef" name="phone" pattern="[0-9]{10}" placeholder="Phone:(10-digits only.)" required>
+            </div>
+        </div>
+
+        <hr>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Aadhar number</label>
+            <input type="tel" class="form-control" name="aadhar" pattern="[0-9]{12}" placeholder="Aadhar number" required>
+            <p style="color: rgb(117, 230, 4);"><%= message %></p>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <input type="password" class="form-control" name="password" id="inputPassword4" placeholder="Password" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Address </label>
+          <input type="text" class="form-control" name="address" id="inputAddress2" placeholder="Chowk Name, Block, Thana">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Village/City</label>
+            <input type="text" class="form-control" name="village" id="inputCity" placeholder="Name of village">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <select id="inputState" name="state" class="form-control" required>
+              <option selected>Choose...</option>
+              <option>Bihar</option>
+              <option>Punjab</option>
+              <option>UP</option>
+              <option>Jharkhand</option>
+              <option>Goa</option>
+              <option>Delhi</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Pin-Code</label>
+            <input type="tel" class="form-control" name="pin" pattern="[0-9]{6}" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group col-md-6" style="padding-left: 0%;">
+            <label for="input">Farming Area</label>
+            <input type="text" class="form-control" name="area" placeholder="in sq. feet" required>
+          </div>
+
+        <hr>
+       <h3>Choose crops which you grow</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="crop1" value="Wheat" id="wheat" >
+                <label for="wheat">Wheat</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="crop2" value="Rice" id="rice" >
+                <label for="rice">Rice</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="crop3" value="Pulse" id="pulse" >
+                <label for="pulse">Pulses</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="crop4" value="Maize" id="maize" >
+                <label for="maize">Maize</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <input type="checkbox" name="crop5" value="Sugarcane" id="sugarcane" >
+                <label for="sugarcane">Sugarcane</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="crop6" value="Potatoes" id="potatoes" >
+                <label for="potatoes">Potatoes</label>
+            </div>
+            <div class="col-md-3">
+                <input type="checkbox" name="crop7" value="Onions" id="onions" >
+                <label for="onions">Onions</label>
+            </div>
+        </div>
+        <div align="right" >
+            <button type="submit" class="btn btn-primary btn-lg btn-dark">Sign in</button>
+        </div>
+      </form>
+</div>
+
+
+
+
+
+<%- include("partials/footer") -%>

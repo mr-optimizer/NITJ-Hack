@@ -1,0 +1,196 @@
+<%- include("partials/header")-%>
+    <title>farmerHub</title>
+    <style>
+        .vl {
+          border-left: 3px solid rgb(231, 188, 46);
+          height: 500px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="farmershub">
+            <h1>Farmer's Hub</h1>
+            <hr>
+<form action="/farmershub" method="POST">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <h3>&nbsp; Sort</h3>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h6> &nbsp;&nbsp;&nbsp;By grains</h6>
+                        <!-- </div> -->
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+                                <ul class="navbar-nav ml-auto">
+                                    <div class="col-md-6" style="text-align: left;">
+
+                                        <div class="row">
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Wheat" id="wheat">
+                                                <label for="wheat">Wheat &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Rice" id="rice">
+                                                <label for="rice">Rice &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Potatoes" id="potatoes">
+                                                <label for="potatoes">Potato &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Pulse" id="pulse">
+                                                <label for="pulse">Pulses &nbsp; </label>
+                                            </li>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="text-align: left;">
+                                        <div class="row">
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Maize" id="maize">
+                                                <label for="maize">Maize &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Sugarcane" id="sugarcane">
+                                                <label for="sugarcane">Sugarcane </label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="Onions" id="onions">
+                                                <label for="onions">Onions &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="crop" value="All" id="all" checked>
+                                                <label for="all">All </label>
+                                            </li>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <h6> &nbsp;&nbsp;&nbsp;By Land (in sqft)</h6>
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent3" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+                                <ul class="navbar-nav ml-auto">
+                                    <div class="col-md-6" style="text-align: left;">
+
+                                        <div class="row">
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="6000" id="6k">
+                                                <label for="6k">&lt;6,000&nbsp;&nbsp; &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="30000" id="30k">
+                                                <label for="30k">&lt;30,000 &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="12000" id="12k">
+                                                <label for="12k">&lt;12,000 &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="40000" id="40k">
+                                                <label for="40k">&lt;40,000 &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="20000" id="20k">
+                                                <label for="20k">&lt;20,000 &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio"name="area" value="60000"  id="60k">
+                                                <label for="60k">&lt;60,000 &nbsp;</label>
+                                            </li>
+                                            <!-- <li class="nav-item">
+                                                <label for="all">Coustom </label>
+                                                <input type="tel" id="all">
+                                            </li> -->
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="text-align: left;">
+                                        <div class="row">
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="240000" id="240k">
+                                                <label for="240k">&lt;2,40,000 &nbsp;</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="480000" id="480k">
+                                                <label for="480k">&lt;4,80,000</label>
+                                            </li>
+                                            <li class="nav-item">
+                                                <input type="radio" name="area" value="1200000" id="1200k" checked>
+                                                <label for="1200k">&lt;12,00,000 &nbsp;</label>
+                                            </li>
+                                          
+                                            <!-- <li class="nav-item">
+                                                <input type="radio"  name="area" value="12k" id="120k">
+                                                <label for="120k">&lt;1,20,000 &nbsp; </label>
+                                            </li> -->
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>  
+                        </nav>
+                    </div>
+                    <div align="right" style="padding-right:1rem;">
+                        
+                        <button type="submit" class="btn btn-lg btn-dark" >Apply</button>
+                    </div>
+                    <hr>
+                </div>
+                
+                 
+                <% for(var j=0;j<list.length;j++){ %>
+                     <div class="col-md-3 testimonialscard">
+                        <img class="testimonialsimg" src="images/testiminials2.png" alt="">
+                        <h7><em>  - <%= list[j].fname %> </em></h7>
+                       <%= list[j].state %>
+                        <hr>
+                        <h6>Land :- </h6>
+                        <p><%= list[j].area %> sqft. </p>
+                        <h6>Crops :-</h6>
+                        <ul>
+                    <% for(var i=0;i<list[j].crop.length; i++) { %>
+                            <li><%= list[j].crop[i].name %></li>
+                       <% } %>
+                        </ul>
+                        <div style="text-align: center; ">
+                            <a href="https://api.whatsapp.com/send?phone=91<%=list[j].phone%>"> <img src="images/whatsapp.png" style="height: 3rem; width: 3rem;" alt=""></a>   
+                        </div>
+                      </div>
+                  <% } %>
+    
+            </div>
+
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <%- include("partials/footer") -%>

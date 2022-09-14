@@ -1,0 +1,297 @@
+body{
+    background-color:#ffc93c;
+}
+h1{
+    font-family:'Times New Roman', Times, serif;
+    padding-bottom: 0.8rem;
+
+}
+p{
+ padding: 0%;
+}
+
+.nav1{
+    background-color: rgb(226, 206, 29);
+}
+
+
+.companytag{
+        color: rgb(27, 27, 27);
+        font-size: 2rem; 
+        font-weight: bolder;
+}
+/* for home page  */
+/* for heading and slides  */
+.marquee{
+    position:absolute;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    z-index: 2;
+    color:rgb(228, 250, 103) ;
+    background-color:rgba(59, 59, 58, 0.664);
+}
+#heading1{
+    padding-top: 1rem;
+    text-align: center;
+    padding-right: 5rem;
+    position: relative;
+    z-index: 1;  
+}
+#heading2{
+    padding-top: 1rem;
+    text-align: center;
+    padding-right: 5rem;
+    position: relative;
+    z-index: 1;  
+}
+@media (max-width:766px) {
+    #heading1{
+        padding-right: 2rem;
+    }
+    #heading2{
+        padding-right: 2rem;
+
+    }
+}
+.container1{
+    
+    border-radius: 3rem;
+    background-color:rgba(230, 209, 94, 0.651);
+    padding: 2rem;
+    margin: 2rem;
+     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+ }
+ .container1:hover{
+     padding: 2.5rem;
+     margin: 1.6rem;
+      margin-bottom: 0.3rem;
+ } 
+ .registerbtn{
+     margin-top: 1%;
+    padding-left: 6rem;
+ }
+ .loginbtn{
+     margin-top: 1%;
+    padding-right: 6rem;
+ }
+.addingSlide{
+    margin-top: 0%;
+    position: absolute;
+    z-index: -1;
+}
+.homeSlide{
+    height: 33rem;
+    width: 100%;
+}
+
+/* for features section  */
+#features{
+    background-color: #ffc93c;
+}
+.features{
+    padding: 1.5rem;
+    background-color: rgb(228, 208, 29);
+}
+.featuresicon:hover{
+    color: rgb(253, 166, 52);
+}
+
+/* for testimonials  */
+#testimonials{
+    background-color: #ffc93c ;
+}
+.testimonials{
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgb(228, 208, 29);
+}
+.testimonialsimg{
+    border-radius: 100%;
+    height: 6rem;
+    width: 6rem;
+    margin: 1%;
+}
+.testimonialscard{
+    text-align: left;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    background-color: rgb(248, 229, 145);
+    margin: 4%;
+    padding: 2.5%;
+    /* padding-left: 2rem; */
+}
+
+
+
+/* for login page  */
+.loginForm{
+    border-radius: 3rem;
+    margin-top: 5rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-bottom: 5rem;
+    background-color:rgba(241, 219, 20, 0.863);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 7rem;  
+    position: relative;  
+    z-index: 2; 
+}
+/* for register page  */
+.registerCompanies{
+    border-radius: 3rem;
+    margin-top: 5rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    margin-bottom: 5rem;
+    background-color:rgba(228, 209, 36, 0.63);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 7rem;
+    position:relative;
+    z-index: 2;
+}
+.registerImg{
+    position: absolute;
+    z-index: -1;
+    height: 58rem;
+    width: 100%;
+}
+.registercompImg{
+    position: absolute;
+    z-index: -1;
+    height: 55.5rem;
+    width: 100%;
+}
+.loginImg{
+    position: absolute;
+    z-index: -1;
+    height: 94%;
+    width: 100%;
+}
+.registerFarmer{
+    border-radius: 3rem;
+    margin-top: 5rem;
+    margin-left: 16rem;
+    margin-right: 16rem;
+    margin-bottom: 5rem;
+    background-color:rgba(228, 209, 36, 0.795);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    padding-right: 7rem;
+    
+    position:relative;
+    z-index: 2;
+}
+@media(max-width:1006px){
+    .registerCompanies{
+        margin:6%;
+        padding-right: 3rem;
+        padding-left: 3rem;
+        margin-top: 2rem;
+        
+    }
+    .registerFarmer{
+        margin:6%;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        margin-top: 2rem;
+    }
+    .registerImg{
+        height: 220%;
+    }
+    .registercompImg{
+        height: 69rem;
+    }
+    .registerinput{
+        padding: 0%;
+        padding-top: 3%;
+    }
+    .loginForm{
+        padding-right: 0%;
+        margin: 4%;
+        margin-top: 3rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        margin-bottom: 8%;
+    }
+    .loginImg{
+        height: 87%;
+    }
+}
+
+::placeholder{
+    font-family: cursive;
+    font-style: italic;
+}
+
+/* for farmer profile */
+#farmerProfile{
+    margin: 3%;
+    padding: 2rem;
+    background-color: rgb(245, 232, 57);
+    font-size: 1.4rem;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+.details{
+    /* background-color: rgb(245, 247, 138); */
+    border-radius: 1rem;
+    text-align: left;
+    /* margin-right: 2rem; */
+    
+}
+
+/* for farmerhub  */
+#farmershub{
+    text-align: center;
+    margin: 2%;
+    padding:3%;
+    background-color: rgb(245, 247, 138);
+
+}
+
+
+
+/* for About  */
+#about{
+    /* margin: 0.17%; */
+    margin-bottom: 0rem;
+    padding: 1%;
+    text-align: left;
+    /* position:relative;
+    z-index: -3; */
+    background-color: rgb(145, 131, 95);
+}
+.about{
+    background-color: rgb(145, 131, 95);
+   
+}
+.button1{
+    background-color: rgba(145, 131, 95, 0.89);
+    text-align: center;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+.linking{
+    margin-left: 0%;
+    margin: 0.5rem;
+    color: black;
+}
+
+/* for footer  */
+.footer {
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color:rgb(245, 223, 29);
+}
+
+.footer p {
+    padding-top: 20px;
+	font-size: 12px;
+    color:rgb(27, 27, 27);
+}
+

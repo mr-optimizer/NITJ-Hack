@@ -1,0 +1,30 @@
+<%- include("partials/header")-%>
+<title>Login</title>
+</head>
+<body>
+
+    <img src="images/farmerlogin.jpg" class="loginImg" alt="">
+ <div class="loginForm">
+    <h1 style="font-family:'Times New Roman', Times, serif;padding-bottom: 0.7rem;">Login</h1>
+
+    <form action="/loginFarmer" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1"><div style="font-family: serif;">Aadhar Number</div> </label>
+          <input type="tel" class="form-control" name="aadhar" pattern="[0-9]{12}" placeholder="Enter Aadhar no." required>
+        </div>
+        <div class="form-group" style="padding-bottom: 0.7rem;">
+          <label for="exampleInputPassword1"> Password </label>
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" required>
+          <p style="color: crimson;"><%= message %></p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-dark" >Submit</button>
+      </form>
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>

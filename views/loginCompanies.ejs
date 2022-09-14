@@ -1,0 +1,32 @@
+<%- include("partials/header")-%>
+<title>Login</title>
+</head>
+<body>
+
+  <img class="loginImg" src="images/registerFarmer.jpg" alt="">
+    <div class="loginForm">
+    <h1 >Login</h1>
+
+    <form action="/loginCompanies" method="POST">
+        <div class="form-group">
+          <label for="exampleInputEmail1"><div style="font-family: serif;">Email address</div> </label>
+          <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+        </div>
+        <div class="form-group" style="padding-bottom: 0.7rem;">
+          <label for="exampleInputPassword1"> Password </label>
+          <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password" required>
+          <p style="color: crimson; font-family: cursive;"><%= message %></p>
+        </div>
+        <button type="submit" class="btn btn-primary btn-dark" >Submit</button>
+      </form>
+
+
+</div>
+
+
+
+
+
+
+
+<%- include("partials/footer") -%>
